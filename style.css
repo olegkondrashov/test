@@ -1,11 +1,17 @@
 
-.header {
-    display: flex;
-    justify-content: space-between;
+.container {
     width: 95%;
     max-width: 1200px;
     margin: 0 auto;
+}
+.header {
+    
+    margin: 0 auto;
     background-color: #fff;
+}
+.header__items {
+    display: flex;
+    justify-content: space-between;
 }
 .header__logo {
     width: 200px;
@@ -32,11 +38,13 @@
     color: red;
 }
 .main {
+    height: 100%;
+    width: 100%;
+}
+.main__items {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
 }
 .main__blocks {
     width: 50%;
@@ -68,7 +76,7 @@
 
 
 @media (max-width: 800px) {
-    .header {
+    .header__items {
         position: sticky;
         top: 0;
         left: 0;
@@ -76,7 +84,7 @@
         flex-direction: column;
         align-items: center;
     }
-    .main {
+    .main__items {
         flex-direction: column;
     }
     .main__blocks {
