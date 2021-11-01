@@ -91,6 +91,9 @@
 
 
 @media (max-width: 800px) {
+    .container {
+        width: 100%;
+    }
     .header {
         position: sticky;
         top: 0;
