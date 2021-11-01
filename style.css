@@ -44,6 +44,9 @@
     display: table;
     justify-content: center;
 }
+.main__row {
+    display: table-row;
+}
 .main__blocks {
     display: block;
     width: 50%;
@@ -99,9 +102,21 @@
         align-items: center;
     }
     .main__items {
-        flex-direction: column;
+        display: block;
+    }
+    .main__row {
+        display: block;
     }
     .main__blocks {
+        display: block;
         width: 100%;
+        height: 250px;
+        margin: 0 auto;
+    }
+    .main__second {
+        display: inline-block;
+    }
+    .text {
+        margin: 0;
     }
 }
