@@ -6,6 +6,7 @@
 .header {
     margin: 0 auto;
     background-color: #fff;
+    z-index: 10;
 }
 .header__items {
     display: flex;
@@ -40,29 +41,39 @@
     width: 100%;
 }
 .main__items {
-    display: flex;
+    display: table;
     justify-content: center;
-    align-items: center;
 }
 .main__blocks {
+    display: block;
     width: 50%;
+    height: 100%;
 }
 .main__first {
-    background: url('https://media.wired.com/photos/598e35fb99d76447c4eb1f28/master/pass/phonepicutres-TA.jpg') no-repeat center;
-    cursor: pointer;
-    
+    display: table-cell;
+    position: relative;
+    max-width: 50%;
+    height: 100%;
 }
-.main__first img {
+.main-img {
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
+    transition: all 1s;
+}
+.main__img-hover {
     opacity: 1;
-    transition: all 2s;
 }
 .main__first :hover {
     opacity: 0;
 }
 .main__second {
+    display: table-cell;
     height: 100%;
-    margin: 50px;
+    padding: 50px;
 }
 .text {
     font-size: 16px;
